@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana;
+  margin: 1 auto;
+
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+
+div.container div.menu div.menuitem div{
+  color: #f2f2f2;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 170px; /* Adjust the height as needed */
+  overflow: hidden;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-content {
+  position: relative;
+  z-index: 3;
+  color: rgb(155, 41, 221);
+  text-align: center;
+  padding: 20px;
+  /* From https://css.glass */
+background: rgba(229, 55, 127, 0.19);
+border-radius: 4px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+border: 1px solid rgba(229, 55, 127, 0.33);
+}
+
+
+
+
+
+.container {
+  overflow: auto;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+}
+
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid ghostwhite;
+  
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+div.main h2{
+align-items: center;
+justify-content: center;
+
+}
+div.main img{
+  border-radius: 5px;
+}
+div.main p{
+  color: #facf4c;
+  font-family: 'Eater', cursive;
+  font-weight: bold;
+}
+
+
+.right {
+  position: relative;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+.right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(105, 101, 103, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  border: 1px solid rgba(105, 101, 103, 0.33);
+  z-index: -1;
+}
+.right h3{
+  font-family: 'Lilita One', cursive;
+  color: ghostwhite;
+}
+.right h2,
+.right p {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Caveat', cursive;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  /* For tablets */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  
+  .right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 17px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-item {
+  margin-bottom: 20px;
+  font-family: 'Gruppo', sans-serif;
+  font-weight: bold;
+}
+div.footer div.footer-item img{
+  width: 12px;
+  height: 12px;
+  scroll-behavior: smooth;
+
+}
+
+
+.footer-item .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item .copyright img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+.footer h3 {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: 'Gruppo', sans-serif;
+}
+
+.footer p {
+  scroll-behavior: smooth;
+  margin: 5px 0;
+  font-family: 'Gruppo', sans-serif;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  font-family: 'Gruppo', sans-serif;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer ul li a:hover {
+  color: #666;
+}
+
+
+
+
+
+
+
+   
+div.container div.menu div.menuitem img.imag1{
+  width: 22px;
+  height: 25px;
+  scroll-behavior: smooth;
+ 
+ 
+ 
+ 
+}
+
+div.container div.menu div.menuitem div{
+  margin-left: 0px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.header-content h1 {
+  font-size: 48px;
+  scroll-behavior: smooth;
+  background: linear-gradient(to right, #ff00ff, #00ffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+
+
+
+
+
+
+
+
+div.header-content h3 {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  animation: reflecting-animation 7s linear infinite alternate;
+}
+
+@keyframes reflecting-animation {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-90%);
+    opacity: 1;
+  }
+}
+div.right h3 img{
+  scroll-behavior: smooth;
+width: 22px;
+height: 22px;
+vertical-align: middle;
+margin-right: 5px;
+
+}
